@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Privacy ringkas DIJAGA Online (landing page)." />
+    <title>Privacy — DIJAGA Online</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="./index.html"><span class="brand__name">DIJAGA Online</span></a>
+        <nav class="nav" aria-label="Primary">
+          <a href="./index.html#contact" class="nav__cta">Request Demo</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1>Privacy (Ringkas)</h1>
+          <p class="lead">Halaman ini menjelaskan praktik privasi untuk landing page DIJAGA Online.</p>
+
+          <h2>Apa yang kami kumpulkan</h2>
+          <ul class="bullets">
+            <li>Jika Anda mengirim email kepada kami, kami menerima informasi yang Anda kirim (mis. nama, email, isi pesan).</li>
+            <li>Jika analytics diaktifkan, kami hanya mengumpulkan metrik tingkat halaman (mis. page view) tanpa data sensitif.</li>
+          </ul>
+
+          <h2>Apa yang tidak kami lakukan</h2>
+          <ul class="bullets">
+            <li>Kami tidak meminta login.</li>
+            <li>Landing page tidak mengakses data tenant atau data bisnis klien.</li>
+            <li>Kami tidak menjual data Anda.</li>
+          </ul>
+
+          <h2>Cookies</h2>
+          <p>
+            Landing page ini dirancang untuk minimal cookie. Jika analytics privacy-friendly diaktifkan,
+            tujuannya hanya untuk memahami penggunaan halaman secara high-level.
+          </p>
+
+          <h2>Kontak</h2>
+          <p>
+            Pertanyaan privasi: <a href="mailto:contact@dijagaonline.com">contact@dijagaonline.com</a>
+          </p>
+
+          <p class="small" style="margin-top: 18px;">
+            Kembali ke <a href="./index.html">Landing Page</a> · Lihat <a href="./terms.html">Terms</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p class="small">© <span id="year">2025</span> DIJAGA Online.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+    </script>
+  </body>
+</html>
