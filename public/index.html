@@ -1,327 +1,178 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="DIJAGA Online membantu disiplin kerja database terlihat: mencatat pekerjaan, membuktikan pelaksanaan, dan menunjukkan dampaknya." />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>DIJAGA Online — Database Maintenance dengan Disiplin yang Terlihat</title>
+  <title>DIJAGA Online — Database Maintenance dengan Disiplin yang Terlihat</title>
 
-    <!-- Sprint 2: static only. No external scripts. -->
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
+  <meta name="description" content="DIJAGA Online membantu organisasi melihat, mendokumentasikan, dan menjaga disiplin pengelolaan database secara konsisten." />
 
-  <body>
-    <!-- Header -->
-    <header class="site-header">
-      <div class="container">
-        <a class="brand" href="#top" aria-label="DIJAGA Online">
-          <!-- Optional: replace text with logo later (static) -->
-          <span class="brand__name">DIJAGA Online</span>
-        </a>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-        <nav class="nav" aria-label="Primary">
-          <a href="#problem">Masalah</a>
-          <a href="#what">Apa yang DIJAGA lakukan</a>
-          <a href="#flow">Alur</a>
-          <a href="#impact">Dampak</a>
-          <a href="#status">Status</a>
-          <a href="#faq">FAQ</a>
-          <a href="#contact" class="nav__cta">Request Demo</a>
-          </nav>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="container header__inner">
+    <div class="brand">
+      <div class="brand__mark"></div>
+      <span>DIJAGA Online</span>
+    </div>
+
+    <nav class="nav">
+      <a href="#problem">Masalah</a>
+      <a href="#what">Apa yang Kami Lakukan</a>
+      <a href="#flow">Alur Kerja</a>
+      <a href="#trust">Trust</a>
+      <a href="#contact" class="btn btn--primary nav__cta">Request Demo</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="section section--dark hero">
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <h1>Database Maintenance dengan Disiplin yang Terlihat</h1>
+
+      <p>
+        Banyak organisasi sudah memiliki database, backup, dan dashboard.
+        Namun sedikit yang benar-benar tahu apakah semuanya berjalan
+        sesuai disiplin yang bisa dipertanggungjawabkan.
+      </p>
+
+      <div class="hero__badges">
+        <span class="badge">Operational Discipline</span>
+        <span class="badge">Audit-Ready</span>
+        <span class="badge">Evidence-Based</span>
       </div>
-    </header>
 
-    <main id="top">
-      <!-- Hero -->
-      <section class="section hero">
-        <div class="container hero__grid">
-          <div class="hero__content">
-            <h1>Database Maintenance dengan Disiplin yang Terlihat</h1>
-
-            <p class="lead">
-              Bukan sekadar monitoring atau backup.
-              DIJAGA mencatat pekerjaan, membuktikan pelaksanaan, dan menunjukkan dampaknya.
-            </p>
-
-            <div class="cta">
-              <a class="btn btn--primary" href="#contact">Request Demo</a>
-              <a class="btn btn--secondary" href="#contact">Talk to Us</a>
-            </div>
-
-            <ul class="trust-bullets" aria-label="Trust notes">
-              <li>Tidak mengakses data bisnis klien</li>
-              <li>Tidak mengambil alih sistem klien</li>
-              <li>Klaim berbasis praktik nyata</li>
-            </ul>
-          </div>
-
-          <div class="hero__aside" aria-label="Product positioning panel">
-            <div class="card">
-              <p class="card__title">Fokus Utama</p>
-              <p class="card__text">
-                Disiplin kerja &amp; evidence operasional.
-              </p>
-              <p class="card__hint">
-                Keandalan pengeloaan database adalah salah satu kekuatan bisnis
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Problem Reality -->
-      <section id="problem" class="section">
-        <div class="container">
-          <h2>Masalahnya Bukan Tidak Ada Tools</h2>
-
-          <p>
-            Backup, monitoring, dan audit sering sudah ada.
-            Namun dalam praktiknya:
-          </p>
-
-          <ul class="bullets">
-            <li>Backup tidak diverifikasi</li>
-            <li>Monitoring tidak jadi bukti kerja</li>
-            <li>Audit trail tidak operasional</li>
-            <li>Saat insiden, kesiapan tidak jelas</li>
-          </ul>
-
-          <p>
-            Masalah utamanya adalah disiplin kerja yang tidak terlihat.
-          </p>
-        </div>
-      </section>
-
-      <!-- What DIJAGA Does -->
-      <section id="what" class="section">
-        <div class="container">
-          <h2>Memodelkan Cara Kerja, Bukan Sekadar Alat</h2>
-
-          <p>
-            DIJAGA memodelkan bagaimana pekerjaan database dijalankan dengan rapi:
-          </p>
-
-          <ol class="steps">
-            <li>Mencatat kewajiban maintenance</li>
-            <li>Merekam pelaksanaan pekerjaan</li>
-            <li>Menghasilkan maintenance run log</li>
-            <li>Mengubahnya menjadi evidence</li>
-            <li>Menunjukkan dampak &amp; kesiapan</li>
-          </ol>
-
-          <p class="note">
-            Fokusnya bukan fitur, tapi keterjelasan kerja.
-          </p>
-        </div>
-      </section>
-
-      <!-- One Operational Flow -->
-      <section id="flow" class="section">
-        <div class="container">
-          <h2>Satu Alur Kerja, Banyak Pelaksana</h2>
-
-         <div class="flow" role="img" aria-label="Operational flow diagram">
-  <div class="flow__item">Maintenance Obligation</div>
-  <div class="flow__arrow" aria-hidden="true">↓</div>
-
-  <div class="flow__item">Maintenance Execution</div>
-  <div class="flow__arrow" aria-hidden="true">↓</div>
-
-  <div class="flow__item">Maintenance Run Log</div>
-  <div class="flow__arrow" aria-hidden="true">↓</div>
-
-  <div class="flow__item">Operational Evidence</div>
-  <div class="flow__arrow" aria-hidden="true">↓</div>
-
-  <div class="flow__item">Impact &amp; Readiness Dashboard</div>
-</div>
-
-
-          <div class="grid-3">
-            <div class="card">
-              <p class="card__title">Siapa pun boleh mengeksekusi</p>
-              <p class="card__text">DBA DIJAGA atau IT internal klien.</p>
-            </div>
-            <div class="card">
-              <p class="card__title">Sistem tetap sama</p>
-              <p class="card__text">Logika tidak berubah karena aktor berbeda.</p>
-            </div>
-            <div class="card">
-              <p class="card__title">Evidence lahir dari kerja nyata</p>
-              <p class="card__text">Bukan input manual terpisah.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Discipline -> Impact -->
-      <section id="impact" class="section">
-        <div class="container">
-          <h2>Disiplin yang Terlihat Dampaknya</h2>
-
-          <ul class="impact-list">
-            <li><strong>Backup</strong> → Backup run log → Kesiapan darurat</li>
-            <li><strong>Optimization</strong> → Optimization record → Stabilitas performa</li>
-            <li><strong>Monitoring</strong> → Health summary → Deteksi dini</li>
-            <li><strong>Verification</strong> → Restore test log → Kepercayaan pemulihan</li>
-            <li><strong>Access control</strong> → Audit log → Akuntabilitas</li>
-          </ul>
-
-          <p class="note">
-            Tanpa pekerjaan nyata, indikator tidak dianggap valid.
-          </p>
-        </div>
-      </section>
-
-      <!-- Dashboard Philosophy -->
-      <section class="section">
-        <div class="container">
-          <h2>Dashboard yang Menjawab Pertanyaan Penting</h2>
-
-          <ul class="bullets">
-            <li>Apakah pekerjaan benar-benar dijalankan?</li>
-            <li>Apa dampaknya ke stabilitas sistem?</li>
-            <li>Jika insiden terjadi sekarang, kita siap atau tidak?</li>
-          </ul>
-
-          <p>
-            Bukan metrik mentah.
-            Yang ditampilkan adalah ringkasan kerja dan kesiapan.
-          </p>
-        </div>
-      </section>
-
-      <!-- Who This Is For -->
-      <section class="section">
-        <div class="container">
-          <h2>Untuk Organisasi yang Butuh Keterjelasan</h2>
-
-          <ul class="bullets">
-            <li>Organisasi dengan sistem internal sendiri</li>
-            <li>Tim IT / DBA yang tidak ingin digantikan</li>
-          </ul>
-
-          <p>
-            DIJAGA membantu agar pekerjaan tercatat, dampaknya terlihat, dan audit lebih tenang.
-          </p>
-        </div>
-      </section>
-
-      <!-- Product Status -->
-      <section id="status" class="section">
-        <div class="container">
-          <h2>Status Produk (Masa Pra Launching)</h2>
-
-          <p>
-            Fokus saat ini adalah disiplin kerja, pencatatan operasional, dan keterjelasan dampak.
-            Automation bersifat opsional, bukan fondasi.
-          </p>
-
-          <div class="card">
-            <p class="card__title">Catatan</p>
-            <p class="card__text">
-              Hubungi kami untuk demo eksklusif.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Trust & Governance Notes (refinement Sprint 3) -->
-<section class="section" aria-labelledby="trust-title">
-  <div class="container">
-    <h2 id="trust-title">Trust &amp; Governance</h2>
-
-    <div class="grid-3">
-      <div class="card">
-        <p class="card__title">Batas yang disengaja</p>
-        <p class="card__text">Tidak mengakses data bisnis klien, dan tidak mengambil alih sistem klien.</p>
-      </div>
-      <div class="card">
-        <p class="card__title">Optimalisasi kinerja operasional</p>
-        <p class="card__text">Kualitas lahir dari pekerjaan nyata dan dapat ditelusuri ke run log.</p>
-      </div>
-      <div class="card">
-        <p class="card__title">Perubahan terdokumentasi</p>
-        <p class="card__text">Perubahan konten dan rilis dapat ditelusuri lewat riwayat perubahan.</p>
+      <div class="mt16">
+        <a href="#contact" class="btn btn--primary">Request Demo</a>
+        <a href="#flow" class="btn btn--secondary">Lihat Alur Kerja</a>
       </div>
     </div>
 
-    <p class="small" style="margin-top: 12px;">
-      Baca ringkasannya: <a href="./privacy.html">Privacy</a> · <a href="./terms.html">Terms</a>
+    <div class="hero__panel">
+      <p class="m0">
+        DIJAGA Online membantu organisasi melihat, mendokumentasikan,
+        dan menjaga disiplin pengelolaan database secara konsisten.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROBLEM ================= -->
+<section id="problem" class="section">
+  <div class="container">
+    <h2>Masalahnya Bukan Tidak Ada Tools</h2>
+
+    <p class="lead">
+      Banyak organisasi sudah memiliki tools monitoring, backup, dan logging.
+      Namun praktik sehari-hari sering kali tidak konsisten dan sulit diaudit.
     </p>
   </div>
 </section>
 
-<!-- FAQ (defensible) -->
-<section class="section" id="faq" aria-labelledby="faq-title">
+<!-- ================= WHAT ================= -->
+<section id="what" class="section section--soft">
   <div class="container">
-    <h2 id="faq-title">FAQ</h2>
+    <h2>Memodelkan Cara Kerja, Bukan Sekadar Alat</h2>
 
-    <details class="faq" open>
-      <summary>Apakah DIJAGA menggantikan tools monitoring seperti yang sudah ada?</summary>
-      <p>Tidak. DIJAGA berfokus pada ringkasan disiplin kerja, evidence, dan readiness. Tools monitoring teknis tetap bisa dipakai.</p>
-    </details>
+    <div class="grid grid--2">
+      <div class="card card--accent">
+        <h3>Disiplin Operasional</h3>
+        <p>
+          Fokus pada bagaimana pekerjaan dilakukan secara konsisten,
+          bukan hanya hasil akhirnya.
+        </p>
+      </div>
 
-    <details class="faq">
-      <summary>Apakah DIJAGA mengakses data bisnis klien?</summary>
-      <p>Tidak. Fokus DIJAGA adalah pencatatan pekerjaan maintenance dan evidence operasional, bukan mengambil data bisnis aplikasi klien.</p>
-    </details>
-
-    <details class="faq">
-      <summary>Siapa yang menjalankan maintenance—tim DIJAGA atau IT internal?</summary>
-      <p>Keduanya bisa. Tergantung paket yang diinginkan pelanggan. Siapa pun yang berwenang dapat mengeksekusi. Sistem tetap sama; yang penting pekerjaan tercatat dengan rapi.</p>
-    </details>
-
-    <details class="faq">
-      <summary>Apakah DIJAGA menjamin kepatuhan atau compliance?</summary>
-      <p>Tidak. DIJAGA membantu membuat praktik kerja lebih terdokumentasi dan dapat ditelusuri. Hasil compliance bergantung pada kebijakan dan pelaksanaan organisasi.</p>
-    </details>
-
-    <details class="faq">
-      <summary>Apakah DIJAGA “fully automated”?</summary>
-      <p>Tidak. Automation bersifat opsional. Fondasi DIJAGA adalah disiplin kerja yang terlihat, run log yang jelas, dan bukti pelaksanaan kerja yang transparan didashboar high level.</p>
-    </details>
+      <div class="card card--accent">
+        <h3>Evidence yang Bisa Ditelusuri</h3>
+        <p>
+          Setiap aktivitas penting tercatat dan dapat ditelusuri kembali
+          saat dibutuhkan.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
+<!-- ================= FLOW ================= -->
+<section id="flow" class="section">
+  <div class="container">
+    <h2>Satu Alur Kerja, Banyak Pelaksana</h2>
 
-      <!-- Contact -->
-      <section id="contact" class="section contact">
-        <div class="container">
-          <h2>Request Demo</h2>
-
-          <p>
-            Ingin melihat bagaimana disiplin kerja database bisa terlihat dan berdampak nyata?
-          </p>
-
-          <div class="cta">
-            <a class="btn btn--primary" href="mailto:contact@dijagaonline.com?subject=Request%20Demo%20DIJAGA%20Online">
-              Email: contact@dijagaonline.com
-            </a>
-          </div>
-
-          <p class="small">
-            Saat ini kami sedang masa pra-launching, dapatkan demo eksklusif sekarang juga.
-          </p>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <p class="small">
-          © <span id="year">2025</span> DIJAGA Online. All rights reserved.
-        </p>
-        <p class="small">
-          Jakarta, Indonesia.
-        </p>
+    <div class="grid">
+      <div class="card">
+        <h3>Monitoring</h3>
+        <p>Melihat kondisi database secara berkelanjutan.</p>
       </div>
-    </footer>
 
-    <!-- Optional: minimal JS only for year (safe). If you prefer zero JS, hardcode year and remove this. -->
-    <script>
-      document.getElementById("year").textContent = String(new Date().getFullYear());
-    </script>
-  </body>
+      <div class="card">
+        <h3>Documentation</h3>
+        <p>Mencatat tindakan dan kondisi penting secara sistematis.</p>
+      </div>
+
+      <div class="card">
+        <h3>Review</h3>
+        <p>Menilai apakah praktik yang dilakukan sudah sesuai standar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRUST ================= -->
+<section id="trust" class="section section--soft">
+  <div class="container">
+    <h2>Trust &amp; Governance</h2>
+
+    <div class="callout">
+      <p class="m0">
+        Pendekatan DIJAGA Online dirancang agar mudah dipahami,
+        terdokumentasi, dan dapat dipertanggungjawabkan.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section section--dark contact">
+  <div class="container">
+    <h2>Request Demo</h2>
+
+    <p class="lead">
+      Jika Anda ingin melihat bagaimana disiplin database dapat
+      divisualisasikan dan dijaga secara konsisten, hubungi kami.
+    </p>
+
+    <div class="contact__actions">
+      <a href="mailto:contact@dijagaonline.com" class="btn btn--primary">
+        Hubungi Kami
+      </a>
+    </div>
+
+    <div class="contact__meta">
+      Email:
+      <a href="mailto:contact@dijagaonline.com">contact@dijagaonline.com</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer__inner">
+    <p class="m0">© 2025 DIJAGA Online</p>
+
+    <div>
+      <a href="privacy.html">Privacy</a> ·
+      <a href="terms.html">Terms</a>
+    </div>
+  </div>
+</footer>
+
+</body>
 </html>
